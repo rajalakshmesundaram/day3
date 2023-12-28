@@ -5,29 +5,37 @@ let obj1 = {
     
 }
 let obj2 = {
-    age : "5",
+    age2 : "5",
     name : "person1",
+    ghr :"hjjkj"
     
 }
-
-
-for(let val in obj1)
+let object1length = Object.keys(obj1).length
+let object2length= Object.keys(obj2).length
+let issame = true
+if (object1length === object2length)
 {
     
-    
-    if(obj1[val] == obj2[val])
+for(let val in obj1){
+if(obj1[val] != obj2[val])
     {
-        console.log(obj1[val],obj2[val],true)
-        
-
-    }
-    else
-    {
-    
-        console.log(obj1[val],obj2[val],false)
-
+        issame = false
     }
 }
+}
+else
+{
+    issame = false
+}
+if(issame)
+{
+    console.log("Object properties and values are matched." + true)
+}
+else
+{
+    console.log("Object properties and values are not matched." + false)
+}
+
 
     
 
