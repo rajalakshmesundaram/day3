@@ -7,7 +7,7 @@ let obj1 = {
 let obj2 = {
     age2 : "5",
     name : "person1",
-    ghr :"hjjkj"
+    
     
 }
 let object1length = Object.keys(obj1).length
